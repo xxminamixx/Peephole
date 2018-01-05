@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Sword
 
 class ViewController: UIViewController {
     
@@ -44,9 +45,23 @@ extension ViewController: WKNavigationDelegate {
             }
             
             print(queryItems)
+            print(queryItems[1])
         }
         
         decisionHandler(WKNavigationActionPolicy.allow)
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        
+        
+            let url = navigationResponse.response.url
+//            let cookie = navigationResponse
+//            print(cookie)
+    }
+    
+    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        let cred = URLCredential(user: "pencil3215@gmail.com", password: "vocapho28", persistence: URLCredential.Persistence.none)
+        completionHandler(URLSession.AuthChallengeDisposition.useCredential, cred)
     }
     
 }
