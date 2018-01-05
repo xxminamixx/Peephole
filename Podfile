@@ -7,6 +7,7 @@ target 'DiscordWatcher' do
 
   # Pods for DiscordWatcher
   pod 'Alamofire'
+  pod 'Sword'
 
 end
 

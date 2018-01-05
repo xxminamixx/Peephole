@@ -10,5 +10,18 @@ import UIKit
 import Alamofire
 
 class SessionManager: NSObject {
+    
+    static let shared = SessionManager()
 
+    func setting() {
+        let const = APIConst()
+        Alamofire.request(const.baseURL + const.oauthBasic + const.clientId, method: .post, parameters: nil, encoding: URLEncoding.default, headers: nil).validate().responseJSON(completionHandler: { respons in
+            
+            switch respons.result {
+            case .success: break
+            case .failure: break
+            }
+        })
+    }
+    
 }

@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.6.0)
+  - Starscream (3.0.3)
+  - Sword (0.9.0):
+    - Starscream (~> 3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Sword
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Starscream: dfb1b3f39506717ee52b67fb48de0c8269504cbc
+  Sword: c0aa8486f69af9b76eb62944d1eaf577af466129
 
-PODFILE CHECKSUM: 7899ee65effec0b11a2663af4d1176249a5bfafe
+PODFILE CHECKSUM: c3708933b0c57cf234b40685dfa19db347ccfedb
 
 COCOAPODS: 1.3.0
