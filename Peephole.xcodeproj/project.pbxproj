@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6989908CEB033BCB271E6ED8 /* Pods_DiscordWatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012392DDA36B6D4C667750E2 /* Pods_DiscordWatcher.framework */; };
 		9D7F36A61FFF561C002BF71E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F36A51FFF561C002BF71E /* AppDelegate.swift */; };
 		9D7F36A81FFF561C002BF71E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F36A71FFF561C002BF71E /* ViewController.swift */; };
 		9D7F36AB1FFF561C002BF71E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7F36A91FFF561C002BF71E /* Main.storyboard */; };
 		9D7F36AD1FFF561C002BF71E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7F36AC1FFF561C002BF71E /* Assets.xcassets */; };
 		9D7F36B01FFF561C002BF71E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7F36AE1FFF561C002BF71E /* LaunchScreen.storyboard */; };
+		9D7F36BE1FFF568F002BF71E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7F36BD1FFF568F002BF71E /* NotificationCenter.framework */; };
+		9D7F36C11FFF568F002BF71E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F36C01FFF568F002BF71E /* TodayViewController.swift */; };
+		9D7F36C41FFF568F002BF71E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7F36C21FFF568F002BF71E /* MainInterface.storyboard */; };
+		9D7F36C81FFF568F002BF71E /* DiscordWatcher.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D7F36BB1FFF568E002BF71E /* DiscordWatcher.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D7F36CE1FFF5B83002BF71E /* APIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F36CD1FFF5B83002BF71E /* APIConst.swift */; };
+		9D7F36D01FFF61DE002BF71E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F36CF1FFF61DE002BF71E /* SessionManager.swift */; };
+		BEDE23D4CF83091DA1787C54 /* Pods_Peephole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E51555FD3A28A5778BE51FD /* Pods_Peephole.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9D7F36C61FFF568F002BF71E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7F369A1FFF561C002BF71E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7F36BA1FFF568E002BF71E;
+			remoteInfo = DiscordWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D7F36CC1FFF568F002BF71E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D7F36C81FFF568F002BF71E /* DiscordWatcher.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		012392DDA36B6D4C667750E2 /* Pods_DiscordWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscordWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4578EE2C9E11E51914476325 /* Pods-Peephole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peephole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Peephole/Pods-Peephole.debug.xcconfig"; sourceTree = "<group>"; };
+		4E51555FD3A28A5778BE51FD /* Pods_Peephole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peephole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7F36A21FFF561C002BF71E /* Peephole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peephole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7F36A51FFF561C002BF71E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D7F36A71FFF561C002BF71E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +57,16 @@
 		9D7F36AC1FFF561C002BF71E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D7F36AF1FFF561C002BF71E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D7F36B11FFF561C002BF71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7F36BB1FFF568E002BF71E /* DiscordWatcher.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiscordWatcher.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7F36BD1FFF568F002BF71E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9D7F36C01FFF568F002BF71E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		9D7F36C31FFF568F002BF71E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9D7F36C51FFF568F002BF71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7F36CD1FFF5B83002BF71E /* APIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConst.swift; sourceTree = "<group>"; };
+		9D7F36CF1FFF61DE002BF71E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		9EB6F85FE30284A0932F8AEB /* Pods-DiscordWatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscordWatcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiscordWatcher/Pods-DiscordWatcher.release.xcconfig"; sourceTree = "<group>"; };
+		B879F354E2A987477B0205E4 /* Pods-Peephole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peephole.release.xcconfig"; path = "Pods/Target Support Files/Pods-Peephole/Pods-Peephole.release.xcconfig"; sourceTree = "<group>"; };
+		CA12265D4A181ABAD043A53F /* Pods-DiscordWatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscordWatcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiscordWatcher/Pods-DiscordWatcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +74,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDE23D4CF83091DA1787C54 /* Pods_Peephole.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7F36B81FFF568E002BF71E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7F36BE1FFF568F002BF71E /* NotificationCenter.framework in Frameworks */,
+				6989908CEB033BCB271E6ED8 /* Pods_DiscordWatcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8323B7953037EE24468B3C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA12265D4A181ABAD043A53F /* Pods-DiscordWatcher.debug.xcconfig */,
+				9EB6F85FE30284A0932F8AEB /* Pods-DiscordWatcher.release.xcconfig */,
+				4578EE2C9E11E51914476325 /* Pods-Peephole.debug.xcconfig */,
+				B879F354E2A987477B0205E4 /* Pods-Peephole.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9D7F36991FFF561C002BF71E = {
 			isa = PBXGroup;
 			children = (
 				9D7F36A41FFF561C002BF71E /* Peephole */,
+				9D7F36BF1FFF568F002BF71E /* DiscordWatcher */,
+				9D7F36BC1FFF568F002BF71E /* Frameworks */,
 				9D7F36A31FFF561C002BF71E /* Products */,
+				8323B7953037EE24468B3C4B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7F36A21FFF561C002BF71E /* Peephole.app */,
+				9D7F36BB1FFF568E002BF71E /* DiscordWatcher.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +134,28 @@
 			path = Peephole;
 			sourceTree = "<group>";
 		};
+		9D7F36BC1FFF568F002BF71E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F36BD1FFF568F002BF71E /* NotificationCenter.framework */,
+				012392DDA36B6D4C667750E2 /* Pods_DiscordWatcher.framework */,
+				4E51555FD3A28A5778BE51FD /* Pods_Peephole.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D7F36BF1FFF568F002BF71E /* DiscordWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F36C01FFF568F002BF71E /* TodayViewController.swift */,
+				9D7F36C21FFF568F002BF71E /* MainInterface.storyboard */,
+				9D7F36C51FFF568F002BF71E /* Info.plist */,
+				9D7F36CD1FFF5B83002BF71E /* APIConst.swift */,
+				9D7F36CF1FFF61DE002BF71E /* SessionManager.swift */,
+			);
+			path = DiscordWatcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,18 +163,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D7F36B41FFF561C002BF71E /* Build configuration list for PBXNativeTarget "Peephole" */;
 			buildPhases = (
+				8393BDAC7D3AFA9B404AEFFF /* [CP] Check Pods Manifest.lock */,
 				9D7F369E1FFF561C002BF71E /* Sources */,
 				9D7F369F1FFF561C002BF71E /* Frameworks */,
 				9D7F36A01FFF561C002BF71E /* Resources */,
+				9D7F36CC1FFF568F002BF71E /* Embed App Extensions */,
+				4238F4A5F041CD11F10E9132 /* [CP] Embed Pods Frameworks */,
+				E4BD59BE49C93576213586DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D7F36C71FFF568F002BF71E /* PBXTargetDependency */,
 			);
 			name = Peephole;
 			productName = Peephole;
 			productReference = 9D7F36A21FFF561C002BF71E /* Peephole.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9D7F36BA1FFF568E002BF71E /* DiscordWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7F36C91FFF568F002BF71E /* Build configuration list for PBXNativeTarget "DiscordWatcher" */;
+			buildPhases = (
+				52D6C038EB4E05B3887346DB /* [CP] Check Pods Manifest.lock */,
+				9D7F36B71FFF568E002BF71E /* Sources */,
+				9D7F36B81FFF568E002BF71E /* Frameworks */,
+				9D7F36B91FFF568E002BF71E /* Resources */,
+				A3D69A8EB7E2966E72A6A1DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscordWatcher;
+			productName = DiscordWatcher;
+			productReference = 9D7F36BB1FFF568E002BF71E /* DiscordWatcher.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +211,10 @@
 				ORGANIZATIONNAME = kyohei.minami;
 				TargetAttributes = {
 					9D7F36A11FFF561C002BF71E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9D7F36BA1FFF568E002BF71E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				9D7F36A11FFF561C002BF71E /* Peephole */,
+				9D7F36BA1FFF568E002BF71E /* DiscordWatcher */,
 			);
 		};
 /* End PBXProject section */
@@ -129,7 +250,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D7F36B91FFF568E002BF71E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7F36C41FFF568F002BF71E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4238F4A5F041CD11F10E9132 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Peephole/Pods-Peephole-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Peephole/Pods-Peephole-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52D6C038EB4E05B3887346DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscordWatcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8393BDAC7D3AFA9B404AEFFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peephole-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D69A8EB7E2966E72A6A1DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiscordWatcher/Pods-DiscordWatcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BD59BE49C93576213586DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Peephole/Pods-Peephole-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D7F369E1FFF561C002BF71E /* Sources */ = {
@@ -141,7 +357,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D7F36B71FFF568E002BF71E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7F36CE1FFF5B83002BF71E /* APIConst.swift in Sources */,
+				9D7F36C11FFF568F002BF71E /* TodayViewController.swift in Sources */,
+				9D7F36D01FFF61DE002BF71E /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D7F36C71FFF568F002BF71E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7F36BA1FFF568E002BF71E /* DiscordWatcher */;
+			targetProxy = 9D7F36C61FFF568F002BF71E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D7F36A91FFF561C002BF71E /* Main.storyboard */ = {
@@ -158,6 +392,14 @@
 				9D7F36AF1FFF561C002BF71E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D7F36C21FFF568F002BF71E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D7F36C31FFF568F002BF71E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,7 +514,9 @@
 		};
 		9D7F36B51FFF561C002BF71E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4578EE2C9E11E51914476325 /* Pods-Peephole.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Peephole/Info.plist;
@@ -286,13 +530,45 @@
 		};
 		9D7F36B61FFF561C002BF71E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B879F354E2A987477B0205E4 /* Pods-Peephole.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Peephole/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.min.peephole.Peephole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D7F36CA1FFF568F002BF71E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA12265D4A181ABAD043A53F /* Pods-DiscordWatcher.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DiscordWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.min.peephole.Peephole.DiscordWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D7F36CB1FFF568F002BF71E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB6F85FE30284A0932F8AEB /* Pods-DiscordWatcher.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DiscordWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.min.peephole.Peephole.DiscordWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +591,15 @@
 			buildConfigurations = (
 				9D7F36B51FFF561C002BF71E /* Debug */,
 				9D7F36B61FFF561C002BF71E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7F36C91FFF568F002BF71E /* Build configuration list for PBXNativeTarget "DiscordWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7F36CA1FFF568F002BF71E /* Debug */,
+				9D7F36CB1FFF568F002BF71E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
